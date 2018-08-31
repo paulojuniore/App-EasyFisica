@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.paulo.easyfisica">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/psicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".topicos.Topico" />
+        <activity android:name=".topicos.mecanica.Mecanica" />
+        <activity android:name=".topicos.mecanica.cinematica.Cinematica" />
+        <activity android:name=".topicos.mecanica.cinematica.VelocidadeMedia" />
+        <activity android:name=".topicos.mecanica.cinematica.AceleracaoMedia" />
+        <activity android:name=".topicos.mecanica.dinamica.Dinamica" />
+        <activity android:name=".topicos.mecanica.dinamica.PrimeiraLeiDeNewton" />
+        <activity android:name=".topicos.mecanica.dinamica.SegundaLeiDeNewton" />
+        <activity android:name=".topicos.termologia.Termologia" />
+        <activity android:name=".topicos.termologia.calorimetria.Calorimetria" />
+        <activity android:name=".topicos.termologia.calorimetria.CalorSensivel" />
+        <activity android:name=".topicos.termologia.calorimetria.CalorLatente" />
+        <activity android:name=".topicos.termologia.termodinamica.Termodinamica" />
+        <activity android:name=".topicos.termologia.termodinamica.PrimeiraLeiDaTermodinamica" />
+        <activity android:name=".topicos.termologia.termodinamica.VariacaoDaEnergia" />
+        <activity android:name=".topicos.termologia.dilatacao.Dilatacao" />
+        <activity android:name=".topicos.termologia.dilatacao.DilatacaoLinear" />
+        <activity android:name=".topicos.termologia.dilatacao.DilatacaoSuperficial" />
+        <activity android:name=".topicos.optica.Optica" />
+        <activity android:name=".topicos.optica.optica_geometrica.OpticaGeometrica" />
+        <activity android:name=".topicos.optica.optica_geometrica.LeiDaRefracao" />
+        <activity android:name=".topicos.ondulatoria.Ondulatoria" />
+        <activity android:name=".topicos.ondulatoria.ondas.Ondas" />
+        <activity android:name=".topicos.ondulatoria.ondas.VelocidadeDePropagacao" />
+        <activity android:name=".topicos.eletromagnetismo.Eletromagnetismo" />
+        <activity android:name=".topicos.eletromagnetismo.eletrostatica.Eletrostatica" />
+        <activity android:name=".topicos.eletromagnetismo.eletrostatica.CargaEletrica" />
+        <activity android:name=".topicos.eletromagnetismo.eletrodinamica.EletroDinamica" />
+        <activity android:name=".topicos.eletromagnetismo.eletrodinamica.IntensidadeDaCargaEletrica" />
+        <activity android:name=".Sobre"></activity>
+    </application>
+
+</manifest>

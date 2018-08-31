@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sobre"
+    android:background="@drawable/qwer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.Sobre">
+
+    <TextView
+        android:text="Pesquisas bibliográficas: Kelvyn Alves"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Design: Elthon Kleyson"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="PKE Development ©"
+        android:textSize="25dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_voltar"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <TextView
+        android:text="Escola Virgem de Lourdes - Tecinfo"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/txt_into"
+        android:layout_above="@+id/btn_voltar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Programação: Paulo Júnior"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="62dp"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Orientadores: Gustavo e Danielly"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        android:fontFamily="casual"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/txt_into"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+</RelativeLayout>

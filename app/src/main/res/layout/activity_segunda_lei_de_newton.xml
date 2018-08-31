@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_segunda_lei_de_newton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.mecanica.dinamica.SegundaLeiDeNewton">
+
+    <TextView
+        android:text="2º lei de Newton"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_segundaleidenewton" />
+
+    <TextView
+        android:text="F = m * a"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_segundaleidenewton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formulasegundalei" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/txt_formulasegundalei"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/edt_massa"
+        android:hint="m = massa"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/edt_massa"
+        android:layout_alignLeft="@+id/edt_massa"
+        android:layout_alignStart="@+id/edt_massa"
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_aceleracaoescalar"
+        android:hint="a = aceleração escalar"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/btn_voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_calcular"
+        android:layout_below="@+id/edt_aceleracaoescalar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultfescalar"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/txt_resultadoforcaresultante"
+        android:layout_alignBottom="@+id/txt_resultadoforcaresultante"
+        android:layout_toRightOf="@+id/txt_segundaleidenewton"
+        android:layout_toEndOf="@+id/txt_segundaleidenewton" />
+
+    <TextView
+        android:text="Força escalar resultante(F) ="
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultadoforcaresultante"
+        android:layout_above="@+id/btn_voltar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="18dp" />
+</RelativeLayout>

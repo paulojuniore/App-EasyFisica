@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_velocidade_de_propagacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.ondulatoria.ondas.VelocidadeDePropagacao">
+
+    <TextView
+        android:text="Velocidade de propagação"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_velprop" />
+
+    <TextView
+        android:text="v = λ * ƒ"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formula"
+        android:layout_below="@+id/txt_velprop"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/edt_frequencia"
+        android:hint="ƒ = frequência"
+        android:fontFamily="casual"
+        android:layout_below="@+id/edt_compdeonda"
+        android:layout_alignLeft="@+id/edt_compdeonda"
+        android:layout_alignStart="@+id/edt_compdeonda" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/edt_compdeonda"
+        android:hint="λ =comprimento de onda"
+        android:fontFamily="casual"
+        android:layout_below="@+id/txt_formula"
+        android:layout_alignLeft="@+id/txt_velprop"
+        android:layout_alignStart="@+id/txt_velprop" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_calcular"
+        android:layout_below="@+id/edt_frequencia"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Velocidade (v) = "
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/txt_vel"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_alignLeft="@+id/edt_frequencia"
+        android:layout_alignStart="@+id/edt_frequencia" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultvelprop"
+        android:layout_alignBaseline="@+id/txt_vel"
+        android:layout_alignBottom="@+id/txt_vel"
+        android:layout_alignRight="@+id/btn_calcular"
+        android:layout_alignEnd="@+id/btn_calcular"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/btn_voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp" />
+</RelativeLayout>

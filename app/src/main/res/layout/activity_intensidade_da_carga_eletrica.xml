@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_intensidade_da_carga_eletrica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.eletromagnetismo.eletrodinamica.IntensidadeDaCargaEletrica">
+
+    <TextView
+        android:text="Intensidade da carga elétrica"
+        android:textSize="23dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_intensidade" />
+
+    <TextView
+        android:text="i = Q / Δt"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_intensidade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formula" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/txt_formula"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/edt_q"
+        android:hint="Q = carga elétrica"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/edt_q"
+        android:layout_alignLeft="@+id/edt_q"
+        android:layout_alignStart="@+id/edt_q"
+        android:layout_marginTop="19dp"
+        android:id="@+id/edt_deltat"
+        android:hint="Δt = intervalo de tempo"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_deltat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/btn_calcular" />
+
+    <TextView
+        android:text="Intensidade da corrente elétrica(i) ="
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/txt_int"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/txt_resultintensidade"
+        android:layout_alignBaseline="@+id/txt_int"
+        android:layout_alignBottom="@+id/txt_int"
+        android:layout_alignRight="@+id/edt_deltat"
+        android:layout_alignEnd="@+id/edt_deltat" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txt_intensidade"
+        android:layout_alignEnd="@+id/txt_intensidade"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/btn_voltar" />
+
+</RelativeLayout>

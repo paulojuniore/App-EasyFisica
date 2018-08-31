@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_carga_eletrica"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.eletromagnetismo.eletrostatica.CargaEletrica">
+
+    <TextView
+        android:text="Carga elétrica"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_carga" />
+
+    <TextView
+        android:text="Q = n * e"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_carga"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formula" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/txt_formula"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/edt_numdecargas"
+        android:hint="n = número de cargas elementares"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/edt_numdecargas"
+        android:layout_alignLeft="@+id/edt_numdecargas"
+        android:layout_alignStart="@+id/edt_numdecargas"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_cargaelementar"
+        android:hint="e = carga elétrica elementar"
+        android:fontFamily="casual"/>
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_cargaelementar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/btn_calcular" />
+
+    <TextView
+        android:text="Carga elétrica (Q) ="
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/txt_cargaelet"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_alignRight="@+id/txt_formula"
+        android:layout_alignEnd="@+id/txt_formula" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_cargaelet"
+        android:layout_toRightOf="@+id/txt_cargaelet"
+        android:layout_toEndOf="@+id/txt_cargaelet"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:id="@+id/txt_resultcarga" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_voltar" />
+</RelativeLayout>

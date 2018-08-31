@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calor_latente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.termologia.calorimetria.CalorLatente">
+
+    <TextView
+        android:text="Calor Latente"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_calorlatente" />
+
+    <TextView
+        android:text="Q = m * L"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_calorlatente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formulacalorlatente" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/txt_formulacalorlatente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:id="@+id/edt_massa"
+        android:fontFamily="casual"
+        android:hint="m = massa (g ou kg)" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edt_calordetroca"
+        android:layout_below="@+id/edt_massa"
+        android:layout_alignLeft="@+id/edt_massa"
+        android:layout_alignStart="@+id/edt_massa"
+        android:fontFamily="casual"
+        android:hint="L = calor de troca de estado" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/btn_calcular"
+        android:layout_below="@+id/edt_calordetroca"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultcalorlatente"
+        android:layout_alignTop="@+id/txt_qtdecalor"
+        android:layout_toRightOf="@+id/txt_calorlatente"
+        android:layout_toEndOf="@+id/txt_calorlatente" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:text="Quantidade de calor(Q) ="
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_qtdecalor"
+        android:layout_width="180dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/btn_voltar"
+        android:layout_alignRight="@+id/btn_calcular"
+        android:layout_alignEnd="@+id/btn_calcular" />
+</RelativeLayout>

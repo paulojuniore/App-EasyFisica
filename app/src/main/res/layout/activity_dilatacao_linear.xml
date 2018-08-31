@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dilatacao_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.paulo.easyfisica.topicos.termologia.dilatacao.DilatacaoLinear">
+
+    <TextView
+        android:text="Dilatação linear"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_dilatacaolinear" />
+
+    <TextView
+        android:text="ΔL = Lο * α * Δϴ"
+        android:textSize="25dp"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dilatacaolinear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/txt_formula" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_below="@+id/edt_coeficientededilatacaolinear"
+        android:layout_alignLeft="@+id/edt_coeficientededilatacaolinear"
+        android:layout_alignStart="@+id/edt_coeficientededilatacaolinear"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edt_vardatemperatura"
+        android:hint="Δϴ = variação da temperatura"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/edt_coeficientededilatacaolinear"
+        android:hint="α = coeficiente de dilatação linear"
+        android:fontFamily="casual"
+        android:layout_below="@+id/edt_comprimentoinicial"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_comprimentoinicial"
+        android:hint="Lο = comprimento inicial"
+        android:fontFamily="casual"
+        android:layout_below="@+id/txt_formula"
+        android:layout_alignLeft="@+id/edt_coeficientededilatacaolinear"
+        android:layout_alignStart="@+id/edt_coeficientededilatacaolinear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultvarcomprimento"
+        android:layout_alignBaseline="@+id/txt_vardecomprimento"
+        android:layout_alignBottom="@+id/txt_vardecomprimento"
+        android:layout_alignRight="@+id/edt_vardatemperatura"
+        android:layout_alignEnd="@+id/edt_vardatemperatura" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_voltar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/btn_calcular"
+        android:layout_below="@+id/edt_vardatemperatura"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="variação de comprimento (ΔL) ="
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_vardecomprimento"
+        android:layout_below="@+id/btn_calcular"
+        android:layout_alignLeft="@+id/edt_vardatemperatura"
+        android:layout_alignStart="@+id/edt_vardatemperatura"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>
